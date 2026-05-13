@@ -1,0 +1,28 @@
+/* Base visual identity for IFC 2027 skeleton site. */
+:root {
+  --fern-deep: #1f5b3a;
+  --fern-mid: #2f7b50;
+  --mist: #eef5ef;
+  --ink: #1f2933;
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, #f5faf6, #ffffff 40%),
+    linear-gradient(180deg, #ffffff 0%, var(--mist) 100%);
+}
+
+.navbar {
+  border-bottom: 3px solid var(--fern-mid);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--fern-deep);
+}
+
+.callout-note {
+  border-left: 4px solid var(--fern-mid);
+}

@@ -1,0 +1,13 @@
+---
+title: "About Conference"
+---
+
+# About the Conference
+
+The International Fern Conference 2027 will bring together researchers,
+students, and fern enthusiasts from around the world.
+
+## Scope
+
+The conference will include talks, posters, workshops, and field activities
+covering fern systematics, evolution, ecology, conservation, and more.
