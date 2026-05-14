@@ -1,13 +1,22 @@
 ---
-title: "About Conference"
+title: "About the Conference"
 ---
 
-# About the Conference
+The International Pteridological Congress has been held periodically since 1983, and the 6th Congress will be held in Yokosuka, Japan in 2027.
 
-The International Fern Conference 2027 will bring together researchers,
-students, and fern enthusiasts from around the world.
+## Organizing Committee
 
-## Scope
+- Atsushi Ebihara, National Museum of Nature and Science (chair)
+- Joel H. Nitta, Chiba University (secretary general)
+- Tao Fujiawara, Tokyo Metropolitan University
+- Noriaki Murakami, Museum of Nature and Human Activities, Hyogo
+- Chie Tsutsumi, National Museum of Nature and Science
+- Kaoru Yamamoto, Yokosuka City Museum
 
-The conference will include talks, posters, workshops, and field activities
-covering fern systematics, evolution, ecology, conservation, and more.
+## Past Conferences
+
+- ~~2020: Ferns in Focus~~ (Brazil, cancelled due to COVID-19)
+- 2015: Next Generation Pteridology (Smithsonian Institution)
+- 2004: Ferns for the 21st Century (Royal Botanic Garden Edinburgh)
+- 1995: Holttum Memorial Pteridophyte Symposium (Kew Gardens)
+- 1983: International Symposium on the Biology of Pteridophytes (Royal Botanic Garden Edinburgh)

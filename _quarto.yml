@@ -2,21 +2,21 @@ project:
   type: website
 
 website:
-  title: "International Fern Conference 2027"
+  title: "Ferns 2027"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About Conference
+        text: About
       - href: venue.qmd
-        text: Venue / Access
+        text: Venue
       - href: program.qmd
         text: Program
       - href: registration.qmd
         text: Registration
       - href: travel.qmd
-        text: Travel / Visa
+        text: Travel
       - href: contact.qmd
         text: Contact
 
@@ -24,7 +24,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
 
 babelquarto:
   languagelinks: navbar
@@ -37,8 +37,4 @@ babelquarto:
   languages: [ja]
 
 title-ja: "国際シダ会議 2027"
-description: "Official website for the International Fern Conference 2027"
-description-ja: "国際シダ会議 2027 の公式ウェブサイト"
-author: "International Fern Conference Organizing Committee"
-author-ja: "国際シダ会議実行委員会"
 lang: en

@@ -2,6 +2,4 @@
 title: "Contact"
 ---
 
-# Contact
-
-TBA
+Please send inquiries to the conference organizers at [ferns2027@gmail.com](mailto:ferns2027@gmail.com)

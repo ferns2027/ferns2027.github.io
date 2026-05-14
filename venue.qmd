@@ -2,6 +2,36 @@
 title: "Venue / Access"
 ---
 
-# Venue / Access
+## Conference site
 
-TBA
+The conference will be held at the [Yokosuka City Cultural Hall](https://yokosuka-bunka.info/), in Yokosuka, Kanagawa Prefecture, Japan.
+
+Yokosuka is a port city [located about 50 km south of Tokyo](https://www.google.com/maps/place/Yokosuka+City+Culture+Hall/@35.2747754,139.6722186,17z/data=!3m1!4b1!4m6!3m5!1s0x60183ff36b0c146d:0xe4e0103f0c9977eb!8m2!3d35.2747754!4d139.6722186!16s%2Fg%2F1vhly46y?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D).
+It is accessible by train from Haneda Airport (about 1.5 hr) or Narita Airport (about 2.5 hr).
+
+## Access
+
+Train or bus is recommended to access the Yokosuka City Cultural Hall.
+
+### Train / Bus
+
+#### Via Keikyu Line
+
+- Exit from the West gate of "Yokosuka-Chuo" Station and walk about 10 minutes.
+
+#### Via Japan Rail (JR)
+
+- Get off at JR Yokosuka Line "Yokosuka" Station.
+- Take a Keikyu Bus (about 10 minutes).
+- Get off at the "Bunka Kaikan Mae" bus stop, then walk about 3 minutes.
+
+Buses going to the "Bunka Kaikan Mae" bus stop from JR Yokosuka station
+
+| Bus Stop | Route | Destination |
+|---|---|---|
+| ① | 須 1 | For “Kinugasa Station (Kinugasa Junction)” |
+| ② | 須 3 | For “Yokosuka Municipal Hospital” |
+| ② | 須 4 | For “Sajima Marina Entrance” |
+| ② | 須 5 | For “Nagai” |
+| ② | 須 8 | For “Misakiguchi Station” |
+| ② | 須 11 | For “YRP Center” |

@@ -2,6 +2,4 @@
 title: "Registration"
 ---
 
-# Registration
-
 TBA
