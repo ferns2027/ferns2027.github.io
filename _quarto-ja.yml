@@ -1,0 +1,18 @@
+website:
+  title: "国際シダ会議 2027"
+  navbar:
+    left:
+      - href: index.qmd
+        text: ホーム
+      - href: about.qmd
+        text: 概要
+      - href: venue.qmd
+        text: 会場案内
+      - href: program.qmd
+        text: プログラム
+      - href: registration.qmd
+        text: 参加登録
+      - href: travel.qmd
+        text: 交通案内
+      - href: contact.qmd
+        text: お問い合わせ

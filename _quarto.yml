@@ -1,25 +1,6 @@
 project:
   type: website
 
-website:
-  title: "Ferns 2027"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-      - href: venue.qmd
-        text: Venue
-      - href: program.qmd
-        text: Program
-      - href: registration.qmd
-        text: Registration
-      - href: travel.qmd
-        text: Travel
-      - href: contact.qmd
-        text: Contact
-
 format:
   html:
     theme: cosmo
