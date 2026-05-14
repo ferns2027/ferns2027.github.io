@@ -2,21 +2,21 @@
 title: "会議について"
 ---
 
-国際シダ学会議は1983年以来、定期的に開催されており、第6回会議は2027年に日本横須賀で開催されます。
+国際シダ学会議は1983年以来、定期的に開催されており、第6回会議は2027年に神奈川県横須賀市で開催される予定です。
 
 ## 組織委員会
 
 - 海老原 淳（国立科学博物館、委員長）
-- Joel H. Nitta、千葉大学（事務局長）
-- 藤原 太郎、東京都立大学
-- 村上 範昭、人と自然の博物館、兵庫
-- 佃 千恵、国立科学博物館
+- ニッタ ジョエル（千葉大学、事務局長）
+- 藤原 泰央、東京都立大学
+- 村上 哲明、兵庫県立 人と自然の博物館
+- 堤 千絵、国立科学博物館
 - 山本 薫、横須賀市立博物館
 
 ## 過去の会議
 
 - ~~2020: Ferns in Focus~~（ブラジル、COVID-19により中止）
-- 2015: Next Generation Pteridology（スミソニアン協会）
-- 2004: Ferns for the 21st Century（ロイヤル・ボタニック・ガーデン・エディンバラ）
-- 1995: Holttum Memorial Pteridophyte Symposium（キュー・ガーデン）
-- 1983: International Symposium on the Biology of Pteridophytes（ロイヤル・ボタニック・ガーデン・エディンバラ）
+- 2015: Next Generation Pteridology（スミソニアン博物館）
+- 2004: Ferns for the 21st Century（エディンバラ王立植物園）
+- 1995: Holttum Memorial Pteridophyte Symposium（キュー王立植物園）
+- 1983: International Symposium on the Biology of Pteridophytes（エディンバラ王立植物園）

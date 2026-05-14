@@ -2,4 +2,4 @@
 title: "お問い合わせ"
 ---
 
-ご不明な点はカンファレンス主催者まで[ferns2027@gmail.com](mailto:ferns2027@gmail.com)までお問い合わせください。
+[ferns2027@gmail.com](mailto:ferns2027@gmail.com)までお問い合わせください。
