@@ -38,8 +38,15 @@ jobs:
 
       - name: Render multilingual website
         run: |
+          owner="${GITHUB_REPOSITORY_OWNER}"
           repo_name="${GITHUB_REPOSITORY#*/}"
-          export BABELQUARTO_CI_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${repo_name}/"
+          # For user/org sites (repo name == <owner>.github.io),
+          # the site lives at the root with no subpath.
+          if [ "${repo_name}" = "${owner}.github.io" ]; then
+            export BABELQUARTO_CI_URL="https://${owner}.github.io/"
+          else
+            export BABELQUARTO_CI_URL="https://${owner}.github.io/${repo_name}/"
+          fi
           Rscript scripts/render_site.R
 
       - name: Configure GitHub Pages
