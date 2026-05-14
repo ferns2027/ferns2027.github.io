@@ -2,4 +2,4 @@
 title: "お問い合わせ"
 ---
 
-[ferns2027@gmail.com](mailto:ferns2027@gmail.com)までお問い合わせください。
+[ferns2027conf@gmail.com](mailto:ferns2027conf@gmail.com)までお問い合わせください。
