@@ -14,15 +14,12 @@ Fern Conference 2027.
 - Main language: English (`en`)
 - Additional language: Japanese (`ja`)
 
-Each page has an English source file and a Japanese file:
+Each page has an English source file and a Japanese file. For example:
 
 - `index.qmd` and `index.ja.qmd`
 - `about.qmd` and `about.ja.qmd`
-- `venue.qmd` and `venue.ja.qmd`
-- `program.qmd` and `program.ja.qmd`
-- `registration.qmd` and `registration.ja.qmd`
-- `travel.qmd` and `travel.ja.qmd`
-- `contact.qmd` and `contact.ja.qmd`
+
+etc.
 
 ## Local setup
 
@@ -63,8 +60,36 @@ correctly on subpath-based hosting.
 2. Commit and push to `main`.
 3. GitHub Actions renders and deploys to GitHub Pages.
 
+## Offline Rendering
+
+Build offline English and Japanese HTML packets plus PDFs from rendered pages in
+`_site`. Output files are written to `local/` by default:
+
+```bash
+python3 scripts/build_offline_packet.py
+```
+
+Create only the offline HTML files and skip PDF rendering:
+
+```bash
+python3 scripts/build_offline_packet.py --html-only
+```
+
+Write output files to a custom directory:
+
+```bash
+python3 scripts/build_offline_packet.py --output-dir path/to/output
+```
+
+If Playwright is not installed, install it once:
+
+```bash
+python3 -m pip install playwright
+python3 -m playwright install chromium
+```
+
 ## Add a new page
 
 1. Add `newpage.qmd` and `newpage.ja.qmd`.
-2. Add a navbar item in `_quarto.yml`.
+2. Add a navbar items in `_quarto-en.yml` and `_quarto-ja.yml`.
 3. Commit and push.
