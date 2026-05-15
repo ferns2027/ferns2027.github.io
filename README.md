@@ -62,8 +62,12 @@ correctly on subpath-based hosting.
 
 ## Offline Rendering
 
-Build offline English and Japanese HTML packets plus PDFs from rendered pages in
-`_site`. Output files are written to `local/` by default:
+Build offline English and Japanese HTML packets plus PDFs from source content.
+The script first runs `scripts/render_site.R`, then packages rendered pages from
+`_site` into offline HTML, and finally prints PDFs with Playwright.
+No AI/content-generation step is used in this pipeline.
+
+Output files are written to `local/` by default:
 
 ```bash
 python3 scripts/build_offline_packet.py
@@ -79,6 +83,12 @@ Write output files to a custom directory:
 
 ```bash
 python3 scripts/build_offline_packet.py --output-dir path/to/output
+```
+
+If `_site` is already up to date and you want to skip re-rendering:
+
+```bash
+python3 scripts/build_offline_packet.py --skip-render
 ```
 
 If Playwright is not installed, install it once:

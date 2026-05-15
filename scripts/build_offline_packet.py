@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Iterable
@@ -55,6 +56,14 @@ def parse_args() -> argparse.Namespace:
         help="Only create offline HTML files; skip PDF generation.",
     )
     parser.add_argument(
+      "--skip-render",
+      action="store_true",
+      help=(
+        "Skip running `Rscript scripts/render_site.R` before building "
+        "offline assets."
+      ),
+    )
+    parser.add_argument(
       "--output-dir",
       type=Path,
       default=Path("local"),
@@ -83,15 +92,18 @@ def extract_main(path: Path) -> str:
     if not match:
         raise RuntimeError(f"Could not extract <main> from {path}")
 
-    content = match.group(1)
-    content = re.sub(
-        r'<div class="quarto-title-meta"[\s\S]*?</div>\s*</header>',
-        "</header>",
-        content,
-        flags=re.S,
+    # Keep rendered page content verbatim to avoid any content drift.
+    return match.group(1).strip()
+
+
+def render_site(project_root: Path) -> None:
+    script_path = project_root / "scripts" / "render_site.R"
+    must_exist([script_path])
+    subprocess.run(
+        ["Rscript", str(script_path)],
+        cwd=project_root,
+        check=True,
     )
-    content = re.sub(r'\sdata-anchor-id="[^"]*"', "", content)
-    return content.strip()
 
 
 def build_html(
@@ -333,6 +345,12 @@ def main() -> int:
     output_dir = resolve_output_dir(project_root, args.output_dir)
 
     try:
+        if not args.skip_render:
+            print("Rendering site from source with scripts/render_site.R...")
+            render_site(project_root)
+        else:
+            print("Skipping render step (--skip-render).")
+
         build_offline_assets(project_root, output_dir)
         print(f"Built offline HTML files in {output_dir}:")
         print("- Ferns2027_Website_Offline.html")
