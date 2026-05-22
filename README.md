@@ -46,19 +46,26 @@ servr::httw("_site")
 
 ## Deployment notes
 
-This project is configured for a GitHub Pages project site:
+This project is deployed on GitHub Pages behind Cloudflare-managed DNS:
 
-- Expected URL shape: `https://USERNAME.github.io/REPOSITORY/`
+- Production URL: `https://www.ferns2027.org/`
+- Redirect: `https://ferns2027.org/` -> `https://www.ferns2027.org/`
 - Workflow file: `.github/workflows/deploy.yml`
+- Domain mapping file: `CNAME`
 
-The workflow sets `BABELQUARTO_CI_URL` before rendering so language links work
-correctly on subpath-based hosting.
+The workflow sets `BABELQUARTO_CI_URL` before rendering so language links and
+metadata are generated for the correct production domain. It falls back to the
+default github.io URL shape when no custom domain is configured.
+
+Cloudflare should remain the authoritative DNS host for `ferns2027.org`, while
+GitHub Pages remains the site origin.
 
 ## Content workflow
 
 1. Edit English and Japanese page files directly.
 2. Commit and push to `main`.
 3. GitHub Actions renders and deploys to GitHub Pages.
+4. Cloudflare serves the custom domain in front of GitHub Pages.
 
 ## Offline Rendering
 

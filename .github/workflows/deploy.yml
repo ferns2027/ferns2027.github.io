@@ -1,5 +1,8 @@
 name: Build and Deploy Site
 
+env:
+  CUSTOM_DOMAIN_HOST: www.ferns2027.org
+
 on:
   push:
     branches: [main]
@@ -40,9 +43,11 @@ jobs:
         run: |
           owner="${GITHUB_REPOSITORY_OWNER}"
           repo_name="${GITHUB_REPOSITORY#*/}"
+          if [ -n "${CUSTOM_DOMAIN_HOST}" ]; then
+            export BABELQUARTO_CI_URL="https://${CUSTOM_DOMAIN_HOST}"
           # For user/org sites (repo name == <owner>.github.io),
           # the site lives at the root with no subpath.
-          if [ "${repo_name}" = "${owner}.github.io" ]; then
+          elif [ "${repo_name}" = "${owner}.github.io" ]; then
             export BABELQUARTO_CI_URL="https://${owner}.github.io"
           else
             export BABELQUARTO_CI_URL="https://${owner}.github.io/${repo_name}"
