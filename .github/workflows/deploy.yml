@@ -19,7 +19,9 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest (26.04) lacks P3M binaries and its GCC 15/glibc
+    # breaks source builds of older packages (e.g. later 1.4.4).
+    runs-on: ubuntu-24.04
     env:
       RSPM: https://packagemanager.posit.co/cran/latest
     steps:
